@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@class UserDirectory;
 
-@property (strong, nonatomic) id detailItem;
+@interface DetailViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) UserDirectory *user;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+
 @end

@@ -20,6 +20,11 @@
 		CF3E34B6166B70120089F069 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3E34B4166B70120089F069 /* MainStoryboard_iPad.storyboard */; };
 		CF3E34B9166B70120089F069 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E34B8166B70120089F069 /* MasterViewController.m */; };
 		CF3E34BC166B70120089F069 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E34BB166B70120089F069 /* DetailViewController.m */; };
+		CF3E34C4166B71F20089F069 /* UserDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E34C3166B71F10089F069 /* UserDirectory.m */; };
+		CF3E34C7166B72770089F069 /* UserDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E34C6166B72770089F069 /* UserDataController.m */; };
+		CF3E34CA166B74620089F069 /* IOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E34C9166B74620089F069 /* IOSUtils.m */; };
+		CF3E34CD166B74E00089F069 /* UserInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E34CC166B74E00089F069 /* UserInterface.m */; };
+		CF44EAFC166BD1230083E798 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44EAFB166BD1230083E798 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,16 @@
 		CF3E34B8166B70120089F069 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		CF3E34BA166B70120089F069 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		CF3E34BB166B70120089F069 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		CF3E34C2166B71F10089F069 /* UserDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDirectory.h; path = Views/UserDirectory.h; sourceTree = "<group>"; };
+		CF3E34C3166B71F10089F069 /* UserDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDirectory.m; path = Views/UserDirectory.m; sourceTree = "<group>"; };
+		CF3E34C5166B72770089F069 /* UserDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDataController.h; path = Data/UserDataController.h; sourceTree = "<group>"; };
+		CF3E34C6166B72770089F069 /* UserDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDataController.m; path = Data/UserDataController.m; sourceTree = "<group>"; };
+		CF3E34C8166B74620089F069 /* IOSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSUtils.h; path = Utils/IOSUtils.h; sourceTree = "<group>"; };
+		CF3E34C9166B74620089F069 /* IOSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IOSUtils.m; path = Utils/IOSUtils.m; sourceTree = "<group>"; };
+		CF3E34CB166B74DF0089F069 /* UserInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInterface.h; path = Data/UserInterface.h; sourceTree = "<group>"; };
+		CF3E34CC166B74E00089F069 /* UserInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInterface.m; path = Data/UserInterface.m; sourceTree = "<group>"; };
+		CF44EAFA166BD1230083E798 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoViewController.h; path = Views/VideoViewController.h; sourceTree = "<group>"; };
+		CF44EAFB166BD1230083E798 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoViewController.m; path = Views/VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +106,21 @@
 				CF3E34A8166B70120089F069 /* AppDelegate.h */,
 				CF3E34A9166B70120089F069 /* AppDelegate.m */,
 				CF3E34B1166B70120089F069 /* MainStoryboard_iPhone.storyboard */,
+				CF3E34C2166B71F10089F069 /* UserDirectory.h */,
+				CF3E34C3166B71F10089F069 /* UserDirectory.m */,
+				CF3E34C5166B72770089F069 /* UserDataController.h */,
+				CF3E34C6166B72770089F069 /* UserDataController.m */,
+				CF3E34CB166B74DF0089F069 /* UserInterface.h */,
+				CF3E34CC166B74E00089F069 /* UserInterface.m */,
+				CF3E34C8166B74620089F069 /* IOSUtils.h */,
+				CF3E34C9166B74620089F069 /* IOSUtils.m */,
 				CF3E34B4166B70120089F069 /* MainStoryboard_iPad.storyboard */,
 				CF3E34B7166B70120089F069 /* MasterViewController.h */,
 				CF3E34B8166B70120089F069 /* MasterViewController.m */,
 				CF3E34BA166B70120089F069 /* DetailViewController.h */,
 				CF3E34BB166B70120089F069 /* DetailViewController.m */,
+				CF44EAFA166BD1230083E798 /* VideoViewController.h */,
+				CF44EAFB166BD1230083E798 /* VideoViewController.m */,
 				CF3E34A0166B70120089F069 /* Supporting Files */,
 			);
 			path = lawyered;
@@ -186,6 +211,11 @@
 				CF3E34AA166B70120089F069 /* AppDelegate.m in Sources */,
 				CF3E34B9166B70120089F069 /* MasterViewController.m in Sources */,
 				CF3E34BC166B70120089F069 /* DetailViewController.m in Sources */,
+				CF3E34C4166B71F20089F069 /* UserDirectory.m in Sources */,
+				CF3E34C7166B72770089F069 /* UserDataController.m in Sources */,
+				CF3E34CA166B74620089F069 /* IOSUtils.m in Sources */,
+				CF3E34CD166B74E00089F069 /* UserInterface.m in Sources */,
+				CF44EAFC166BD1230083E798 /* VideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +271,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -262,7 +292,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -276,6 +306,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lawyered/lawyered-Prefix.pch";
 				INFOPLIST_FILE = "lawyered/lawyered-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,6 +318,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lawyered/lawyered-Prefix.pch";
 				INFOPLIST_FILE = "lawyered/lawyered-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -311,6 +343,7 @@
 				CF3E34C1166B70120089F069 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
