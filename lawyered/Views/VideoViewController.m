@@ -21,10 +21,10 @@
 {
     [super viewDidLoad];
 
-    if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
-    {
+    //if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
+    //{
         [self showMasterView];
-    }
+    //}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
