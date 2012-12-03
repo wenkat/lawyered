@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <Opentok/Opentok.h>
 
-@interface VideoViewController : UIViewController
+@interface VideoViewController : UIViewController <OTSessionDelegate, OTSubscriberDelegate, OTPublisherDelegate>
 
-@property (weak, nonatomic) IBOutlet UINavigationItem *navigation;
+@property (weak, nonatomic) IBOutlet UILabel *stopWatchLabel;
+@property (weak, nonatomic) IBOutlet UILabel *activeConnectionsLabel;
+@property (weak, nonatomic) IBOutlet UIToolbar *actionToolBar;
+
+- (void)doConnect;
+- (void)doPublish;
+- (UILabel *)GetStopWatchLabel;
 
 @end
