@@ -31,17 +31,8 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    //if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
-    //{
-        [self showMasterView];
-    //}
     
-    //_vSession = [VideoSession alloc];
-    //[_vSession initialize:self];
-    //_session = [[OTSession alloc] initWithSessionId: [_vSession getSessionId]
-    //                                       delegate:self];
-    //[self doConnect];
+    [self showMasterView];
 
 }
 
@@ -278,6 +269,7 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to
     [self startVideoSession];
     
 }
+
 - (void)viewDidUnload
 {
     [self setStopWatchLabel:nil];
