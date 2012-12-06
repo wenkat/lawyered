@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "VideoViewController.h"
 #import "UserDirectory.h"
 
 @interface DetailViewController ()
@@ -20,8 +21,8 @@
 
 - (void)setSighting:(UserDirectory *) newUser
 {
-    if ( _user != newUser) {
-        _user = newUser;
+    if ( _partner != newUser) {
+        _partner = newUser;
         
         // Update the view.
         [self configureView];
@@ -31,7 +32,7 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-    UserDirectory *theUser = self.user;
+    UserDirectory *theUser = _partner;
     
     static NSDateFormatter *formatter = nil;
     if (formatter == nil) {
@@ -70,6 +71,17 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"CallUser"])
+    {
+        VideoViewController *videoViewController = [segue destinationViewController];
+        videoViewController.user_id = _user_id;
+        videoViewController.partner_id = _partner.name;
+        [videoViewController startVideoSession];
+    }
 }
 
 @end

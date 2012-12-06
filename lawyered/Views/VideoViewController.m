@@ -37,11 +37,11 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to
         [self showMasterView];
     //}
     
-    _vSession = [VideoSession alloc];
-    [_vSession initialize:self];
-    _session = [[OTSession alloc] initWithSessionId: [_vSession getSessionId]
-                                           delegate:self];
-    [self doConnect];
+    //_vSession = [VideoSession alloc];
+    //[_vSession initialize:self];
+    //_session = [[OTSession alloc] initWithSessionId: [_vSession getSessionId]
+    //                                       delegate:self];
+    //[self doConnect];
 
 }
 
@@ -261,6 +261,23 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to
     return [self stopWatchLabel];
 }
 
+-(void) startVideoSession
+{
+    _vSession = [VideoSession alloc];
+    [_vSession initialize:self user_id:_user_id partner_id:_partner_id];
+    _session = [[OTSession alloc] initWithSessionId: [_vSession getSessionId]
+                                           delegate:self];
+    [self doConnect];
+}
+
+- (void)setSessionBetween:(NSString *)user partner_id:(NSString *)partner
+{
+    self.user_id = user;
+    self.partner_id = partner;
+    
+    [self startVideoSession];
+    
+}
 - (void)viewDidUnload
 {
     [self setStopWatchLabel:nil];

@@ -16,15 +16,18 @@
 
 @implementation VideoSession 
 
--(void) initialize:(VideoViewController *) frame
+-(void) initialize:(VideoViewController *) frame user_id:(NSString*)user partner_id:(NSString *)partner
 {
     videoViewController = frame;
     me = [UserInterface alloc];
-    if (![me login]) {
+    /*if (![me login]) {
         [IOSUtils showAlert:@"Login Unsuccessfull" ];
-    }
-    user_id = [me getUserID];
-    partner_id = [me getPartnerID];
+    }*/
+    //user_id = [me getUserID];
+    //partner_id = [me getPartnerID];
+    
+    user_id = user;
+    partner_id = partner;
     
     NSLog(@"User_Id: %@, PartnerId: %@", user_id, partner_id);
     

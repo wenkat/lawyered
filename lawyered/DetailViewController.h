@@ -12,7 +12,9 @@
 
 @interface DetailViewController : UITableViewController
 
-@property (strong, nonatomic) UserDirectory *user;
+@property (strong, nonatomic) NSString *user_id;
+@property (strong, nonatomic) UserDirectory *partner;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
+-(void) setUserId:(NSString *)user_id;
 @end

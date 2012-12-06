@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail View Controller - Lawyered-->
         <scene sceneID="0HV-Np-4dM">
             <objects>
-                <tableViewController id="o3W-2o-hGN" customClass="DetailViewController" sceneMemberID="viewController">
+                <tableViewController title="Lawyered" id="o3W-2o-hGN" customClass="DetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="S1s-o6-gjW">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="877" y="65"/>
         </scene>
-        <!--Video View Controller-->
+        <!--Video View Controller - Welcome-->
         <scene sceneID="sco-M1-Rm2">
             <objects>
-                <viewController id="2KW-bp-Ux0" customClass="VideoViewController" sceneMemberID="viewController">
+                <viewController title="Welcome" id="2KW-bp-Ux0" customClass="VideoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BoY-tG-Apo">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

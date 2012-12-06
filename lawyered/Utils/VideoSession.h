@@ -28,7 +28,7 @@ static NSString* const vGetTokenUrl = @"http://quiet-peak-9535.herokuapp.com/get
     VideoViewController *videoViewController;
 }
 
-- (void) initialize:(VideoViewController *) frame;
+- (void) initialize:(VideoViewController *) frame user_id:(NSString*)user partner_id:(NSString *)partner;
 -(NSString *) getSessionId;
 -(NSString *) getSessionToken;
 -(void) deinitialize;

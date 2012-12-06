@@ -19,7 +19,6 @@ static NSString* const vGetOnlineUsers = @"http://quiet-peak-9535.herokuapp.com/
 {
     UserInterface *me;
     NSString *user_id;
-    NSString *partner_id;
 }
 - (void)initializeDefaultDataList;
 - (NSString *)getOnlineUsers;
@@ -58,9 +57,8 @@ static NSString* const vGetOnlineUsers = @"http://quiet-peak-9535.herokuapp.com/
         [IOSUtils showAlert:@"Login Unsuccessfull" ];
     }
     user_id = [me getUserID];
-    partner_id = [me getPartnerID];
     
-    NSLog(@"User_Id: %@, PartnerId: %@", user_id, partner_id);
+    NSLog(@"User_Id: %@ ", user_id);
     
     NSString* url = [NSString stringWithFormat:vGetOnlineUsers, user_id];
     NSData* data = [NSData dataWithContentsOfURL: [NSURL URLWithString: url]];
@@ -69,6 +67,12 @@ static NSString* const vGetOnlineUsers = @"http://quiet-peak-9535.herokuapp.com/
     return users;
     
 }
+
+-(NSString *) GetUserID
+{
+    return [me getUserID];
+}
+
 - (NSUInteger)countOfList {
     return [self.masterUsersList count];
 }

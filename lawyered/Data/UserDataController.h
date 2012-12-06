@@ -17,5 +17,5 @@
 - (NSUInteger)countOfList;
 - (UserDirectory *)objectInListAtIndex:(NSUInteger)theIndex;
 - (void)addUserDirectoryWithUser:(UserDirectory *)user;
-
+- (NSString *)GetUserID;
 @end
